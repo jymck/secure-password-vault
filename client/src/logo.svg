@@ -1,0 +1,53 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e90ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff1493;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff1493;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e90ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Circle Background -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="url(#grad1)" stroke-width="3" opacity="0.4"/>
+  
+  <!-- Inner Network Nodes -->
+  <circle cx="60" cy="60" r="6" fill="#1e90ff"/>
+  <circle cx="140" cy="60" r="6" fill="#00ff88"/>
+  <circle cx="100" cy="140" r="6" fill="#ff1493"/>
+  <circle cx="100" cy="100" r="10" fill="url(#grad1)"/>
+  
+  <!-- Network Lines -->
+  <line x1="60" y1="60" x2="100" y2="100" stroke="#1e90ff" stroke-width="2" opacity="0.7"/>
+  <line x1="140" y1="60" x2="100" y2="100" stroke="#00ff88" stroke-width="2" opacity="0.7"/>
+  <line x1="100" y1="140" x2="100" y2="100" stroke="#ff1493" stroke-width="2" opacity="0.7"/>
+  <line x1="60" y1="60" x2="140" y2="60" stroke="#1e90ff" stroke-width="2" opacity="0.5"/>
+  
+  <!-- YCR Text with Infrastructure Feel -->
+  <g>
+    <!-- Y -->
+    <text x="35" y="120" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#1e90ff">Y</text>
+    
+    <!-- C -->
+    <text x="90" y="120" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#00ff88">C</text>
+    
+    <!-- R -->
+    <text x="145" y="120" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#ff1493">R</text>
+  </g>
+  
+  <!-- Small Infrastructure Icons -->
+  <!-- Server Stack Symbol -->
+  <g opacity="0.5">
+    <rect x="12" y="170" width="28" height="5" fill="#1e90ff" rx="1"/>
+    <rect x="12" y="178" width="28" height="5" fill="#00ff88" rx="1"/>
+    <rect x="12" y="186" width="28" height="5" fill="#ff1493" rx="1"/>
+  </g>
+  
+  <!-- Cloud Symbol -->
+  <g opacity="0.5">
+    <path d="M 160 170 Q 172 170 178 176 Q 190 176 190 188 L 160 188 Q 154 188 154 182 Q 154 170 160 170" fill="none" stroke="#ff1493" stroke-width="2"/>
+  </g>
+</svg>

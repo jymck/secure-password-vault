@@ -1,0 +1,44 @@
+{
+  "name": "secure-password-vault",
+  "version": "1.0.0",
+  "description": "A highly secure local password vault with AES-256 encryption",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "npm run build:client",
+    "build:client": "cd client && npm run build",
+    "install:client": "cd client && npm install",
+    "setup": "npm install && npm run install:client"
+  },
+  "dependencies": {
+    "axios": "^1.13.5",
+    "axios-cookiejar-support": "^6.0.5",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.6",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.5.2",
+    "express-rate-limit": "^7.1.5",
+    "express-session": "^1.19.0",
+    "helmet": "^7.1.0",
+    "qrcode": "^1.5.3",
+    "sqlite3": "^5.1.6",
+    "tough-cookie": "^6.0.0",
+    "uuid": "^9.0.1",
+    "xlsx": "^0.18.5",
+    "xlsx-populate": "^1.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "password",
+    "vault",
+    "security",
+    "encryption",
+    "aes-256"
+  ],
+  "author": "Secure Password Vault",
+  "license": "MIT"
+}
