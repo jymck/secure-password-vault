@@ -653,11 +653,11 @@ app.post('/api/restore', (req, res) => {
 });
 
 // Serve static files from React build
-app.use(express.static('client/build'));
+app.use(express.static('src/client/build'));
 
 // Handle React routing, return all requests to React app
 app.get('*', (req, res) => {
-  res.sendFile('index.html', { root: 'client/build' });
+  res.sendFile('index.html', { root: 'src/client/build' });
 });
 
 app.listen(PORT, () => {

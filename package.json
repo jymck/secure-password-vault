@@ -7,8 +7,8 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "build": "npm run build:client",
-    "build:client": "cd client && npm run build",
-    "install:client": "cd client && npm install",
+    "build:client": "cd src/client && npm run build",
+    "install:client": "cd src/client && npm install",
     "setup": "npm install && npm run install:client"
   },
   "dependencies": {
